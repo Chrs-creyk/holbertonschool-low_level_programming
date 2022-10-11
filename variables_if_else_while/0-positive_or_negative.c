@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-/*
+/**
 *main - adding random number to n*
 *Return: 0
-*/
+**/
 int main(void)
 {
 srand(time(0));
