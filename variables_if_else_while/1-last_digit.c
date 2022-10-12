@@ -5,11 +5,10 @@
 /*
 *First time using % like a condicion
 */
+
 int main(void)
 
 {
-
-	int n;
 
 	printf("Last digit of ");
 
