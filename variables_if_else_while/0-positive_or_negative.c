@@ -2,11 +2,13 @@
 #include <time.h>
 #include <stdlib.h>
 /**
-*main - adding random number to n*
+*last n*
 *Return: 0
 **/
+
 int main(void)
 {
+
 int n = rand() - RAND_MAX / 2;
 
 srand(time(0));
@@ -18,4 +20,5 @@ printf("%d is zero\n", n);
 if (n < 0)
 printf("%d is negative\n", n);
 return (0);
+
 }
