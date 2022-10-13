@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - numbers 0 -9
+ * main - numberz 0 -9
  * Return: 0
  **/
 
