@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - numbers 0 -9
+ * main - combination of single num
  * Return: 0
  **/
 
