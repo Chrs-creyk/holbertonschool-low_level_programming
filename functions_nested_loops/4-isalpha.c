@@ -10,18 +10,18 @@
 
 int _isalpha(int c)
 {
-    int alpha = 0;
-    char lower, upper;
+	int alpha = 0;
+	char lower, upper;
 
-    for (lower = 'a'; lower <= 'z'; lower++)
-    {
-        for (upper = 'A'; upper <= 'Z'; upper++)
-        {
-            if (c == lower || c == upper)
-            {
-                alpha = 1;
-            }
-        }
-    }
-    return (alpha);
+	for (lower = 'a'; lower <= 'z'; lower++)
+	{
+		for (upper = 'A'; upper <= 'Z'; upper++)
+		{
+			if (c == lower || c == upper)
+			{
+				alpha = 1;
+			}
+		}
+	}
+	return (alpha);
 }
