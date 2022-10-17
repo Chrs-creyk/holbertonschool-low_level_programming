@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * reset_to_98; - change to 98
+ * reset_to_98 - change to 98
  * @n: = 98
  *
  */
