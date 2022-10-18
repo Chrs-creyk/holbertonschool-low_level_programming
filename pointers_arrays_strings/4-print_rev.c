@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
- * _strlen - string
+ * print_rev - printin in reverse
  * @s: the string to print
- * @str: something to print
  */
 
-int _strlen(char *s)
+void print_rev(char *s)
 {
-
 	int i;
 
 	for (i = (strlen(s) - 1); i >= 0; i--)
