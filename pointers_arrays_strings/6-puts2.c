@@ -21,5 +21,3 @@ void puts2(char *str)
 	}
 	_putchar('\n');
 }
-
-char a[4] = hola
