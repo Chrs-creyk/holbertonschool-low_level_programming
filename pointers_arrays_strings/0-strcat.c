@@ -1,3 +1,4 @@
+
 #include "main.h"
 /**
  * _strcat - concatenates two strings
@@ -19,10 +20,10 @@ char *_strcat(char *dest, char *src)
 	len1 = 0;
 	len2 = 0;
 
-	while (src[len1] != src[len1 - 1])
+	while (src[len1] != '\0')
 		len1++;
 
-	while (dest[len2] != src[len1 - 1])
+	while (dest[len2] != '\0')
 		len2++;
 
 	for (i = 0; i <= len1; i++)
