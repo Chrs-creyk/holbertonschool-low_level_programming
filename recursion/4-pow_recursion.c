@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
-/*
- * _pow_recursion - check
- * @x: string
- *
- * @y: string
- * Return:
+
+/**
+ *   _pow_recursion - check
+ *   @x: string
+ *   @y: string
+ *   Return: y is 1
  */
 
 int _pow_recursion(int x, int y)
