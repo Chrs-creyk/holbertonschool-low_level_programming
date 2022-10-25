@@ -1,8 +1,10 @@
 #include "main.h"
-/*
+
+/** factorial -
+ *@n: number of
  */
 
-int factorial(int n);
+int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
