@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*main - print the program name
-*@argc: count of arguments
-*@argv: count of string
-*Return 0
-*/
+ *main - print the program name
+ *@argc: count of arguments
+ *@argv: count of string
+ *Return 0
+ */
 int main(int argc, char *argv[])
 {
 
@@ -14,4 +14,3 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
-
