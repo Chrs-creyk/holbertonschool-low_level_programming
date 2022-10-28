@@ -3,7 +3,7 @@
  *main - print the program name
  *@argc: count of arguments
  *@argv: count of string
- *Return 0
+ *Return: 0
  */
 int main(int argc, char *argv[])
 {
