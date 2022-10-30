@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <unistd.h>
+#include <unstdio.h>
 #include <time.h>
 #include <math.h>
 
@@ -21,3 +21,4 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 
 #endif /*MAIN-H*/
+
