@@ -1,9 +1,9 @@
 #include "main.h"
+
 /**
- * _strdup - returns a pointer to a new string which is a duplicate of the string.
+ * _strdup - returns a pointer to a new string
  * @str: pointer of the string to copy
- * Return: pointer of the new stream
- *
+ * Return: pointer
  */
 char *_strdup(char *str)
 {
