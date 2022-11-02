@@ -6,12 +6,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *ptr;
-
-	ptr = 0;
+	void *ptr;
 
 	ptr = malloc(sizeof(b));
 
-	if (i == 0)
-		exit(98)
+	if (ptr == 0)
+	{
+		exit(98);
+	}
+	return (ptr);
 }
