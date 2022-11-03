@@ -27,7 +27,7 @@ int i = 0, l = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	l = nmemb * size;
+	l = nmemb + size;
 		p = malloc(l);
 	if (p == NULL)
 		return (NULL);
@@ -36,5 +36,5 @@ int i = 0, l = 0;
 		p[i] = 0;
 		i++;
 	}
-	return ;
+	return (p) ;
 }
