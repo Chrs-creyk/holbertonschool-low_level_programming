@@ -4,7 +4,7 @@
 
 
 /**
- * struct_dog - a structure called dog
+ * struct dog - a structure called dog
  * @name: dog name
  * @age: dog age
  * @owner: dog owner
