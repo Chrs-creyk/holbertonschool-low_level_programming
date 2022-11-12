@@ -1,38 +1,26 @@
-#include <stdio.h>
-#include "function_pointers.h"
+#include "3-calc.h"
 
 /**
- * print_elem - prints an integer
- * @elem: the integer to print
- *
- * Return: Nothing.
+ * main - Entry point
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 success
  */
-void print_elem(int elem)
+int main(int argc, char *argv[])
 {
-	printf("%d\n", elem);
-}
+	int (*oprt)(int, int);
 
-/**
- * print_elem_hex - prints an integer, in hexadecimal
- * @elem: the integer to print
- *
- * Return: Nothing.
- */
-void print_elem_hex(int elem)
-{
-	printf("0x%x\n", elem);
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	int array[5] = {0, 98, 402, 1024, 4096};
-
-	array_iterator(array, 5, &print_elem);
-	array_iterator(array, 5, &print_elem_hex);
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	oprt = get_op_func(argv[2]);
+	if (!oprt)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }

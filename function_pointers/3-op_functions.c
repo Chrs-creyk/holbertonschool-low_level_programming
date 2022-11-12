@@ -1,33 +1,66 @@
-#include "function_pointers.h"
+#include "3-calc.h"
+
 /**
- * main - function with the op
- * op_add - add op
- * op_sus - sus op
- * op_mul - mult op
- * op_div - div op
- * op_mod - mod op
- * Return: int
+ * op_add - adds a and b
+ * @a: input int
+ * @b: input int
+ * Return: sum of a and b
  */
-int main(void)
+int op_add(int a, int b)
 {
-	int op_add(int a, int b)
+	return (a + b);
+}
+
+/**
+ * op_sub - substracts a and b
+ * @a: input int
+ * @b: input int
+ * Return: difference of a and b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - multiplies a and b
+ * @a: input int
+ * @b: input int
+ * Return: product of a and b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - divides a and b
+ * @a: input int
+ * @b: input int
+ * Return: division of a and b
+ */
+int op_div(int a, int b)
+{
+	if (b == 0)
 	{
-		return (a + b);
+		printf("Error\n");
+		exit(100);
 	}
-	int op_sub(int a, int b)
+	return (a / b);
+}
+
+/**
+ * op_mod - modulo of a and b
+ * @a: input int
+ * @b: input int
+ * Return: remainder of a and b
+ */
+int op_mod(int a, int b)
+{
+	if (b == 0)
 	{
-		return (a - b);
+		printf("Error\n");
+		exit(100);
 	}
-	int op_mul(int a, int b)
-	{
-		return (a * b);
-	}
-	int op_div(int a, int b)
-	{
-		return (a / b);
-	}
-	int op_mod(int a, int b)
-	{
-		return (a % b);
-	}
+	return (a % b);
 }
