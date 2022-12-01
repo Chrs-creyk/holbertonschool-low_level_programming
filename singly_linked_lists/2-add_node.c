@@ -2,7 +2,7 @@
 /**
  * add_node - adds a new node at the beginning of a list_t list.
  * @head: pointer
- * @str: String
+ * @str: string
  * Return: 0
  */
 list_t *add_node(list_t **head, const char *str)
@@ -10,6 +10,7 @@ list_t *add_node(list_t **head, const char *str)
 	char *dup;
 	int len;
 	list_t *a;
+
 	a = (list_t *)malloc(sizeof(list_t));
 	if (a == NULL)
 	{
