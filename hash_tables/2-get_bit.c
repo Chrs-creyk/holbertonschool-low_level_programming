@@ -1,14 +1,18 @@
-#include "main.h"
+#include "hash_tables.h"
 /**
- * get_bit - return value of a bite.
- * @n: number.
- * @index: point to the index.
- * Return: void.
+ * key_index - Gives the index of a key
+ * @key: The key to find
+ * @size: Size of the array of the hash table
+ * Return: The index at which the key/value pair should be stored
+ * in the array of the hash table
  */
 
-int get_bit(unsigned long int n, unsigned int index)
+unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	if (index < 64)
-		return ((n >> index) & 1);
-	return (-1);
+	unsigned long int idx = 0;
+	unsigned long int new_key = 0;
+
+	new_key = hash_djb2(key);
+	idx = (new_key % size);
+	return (idx);
 }
