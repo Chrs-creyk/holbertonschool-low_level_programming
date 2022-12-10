@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * read_textfile - reads a text file and print
  * @filename: Name of the file with extension
