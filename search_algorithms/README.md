@@ -1,0 +1,1 @@
+This project have examples of ways to search algorithms 
